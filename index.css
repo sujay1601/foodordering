@@ -1,0 +1,206 @@
+
+/* HTML elements */
+
+body {
+    margin: 0;
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+header {
+    background-image: url("/images/burger.jpg");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    margin: 2.5em 0 .3125em 1.25em;
+}
+
+h2 {
+    margin: .3125em 0 2.5em 1.25em;
+}
+
+/* Item section */
+
+.menu {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: .625em;
+    border-bottom: 1px solid lightgray;
+}
+
+.emoji-item {
+    font-size: 2.5rem;
+}
+
+.item-info {
+    margin-left: .9375em;
+    line-height: .2em;
+    width: 25vw;
+}
+
+.item-name, .item-price {
+    font-size: 1.5rem;
+}
+
+.item-ingredients {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: gray;
+}
+
+.item-add {
+    border: 1px solid gray;
+    border-radius: 100%;
+    width: 2em;
+    height: 2em;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.item-add:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.add-btn {
+    margin-left: 4.688em;
+}
+
+/* Order */
+
+.order-title {
+    margin-bottom: 1em;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100vw;
+    padding: 0 1.25em;
+}
+
+.item-remove {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.remove-btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: .75rem;
+    color: gray;
+}
+
+.item-quantity {
+    font-size: 1.5rem;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.complete-order-btn {
+    cursor: pointer;
+    border: none;
+    background: #16DB99;
+    font-size: 1.5rem;
+    color: #ffffff;
+    width: 100vw;
+    max-width: 600px;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin: .75em 0;
+}
+
+/* Hidden class for when elements don't need to be displayed */
+
+.hidden {
+    display: none;
+}
+
+/* Modal */
+
+.modal-close-btn {
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 350px;
+    max-height: 400px;
+    padding: 1em;
+    border: 1px solid darkgray;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    width: 25vw;
+}
+
+.submit-btn {
+    cursor: pointer;
+    border: none;
+    background: #16DB99;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 25vw;
+}
+
+.thank-you {
+    font-size: 1.5rem;
+}
+
+.modal-close-btn {
+    text-align: right;
+}

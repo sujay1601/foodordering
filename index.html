@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+    <header>
+        <h1>Jimmy's Diner</h1>
+        <h2>The best burgers and pizza in town!</h2>
+    </header>
+    <main class="menu" id="menu"></main>
+    <div class="order hidden" id="order"><h4>Your Order</h4></div>
+
+    <!-- Total Order -->
+    <div id="total-order" class="hidden">
+        <div class="total" id="total">
+            <p>Your total:</p>
+            <p class="total-price" id="total-price">$0</p>
+        </div>
+    
+        <div class="complete-order hidden" id="complete-order">
+            <button class="complete-order-btn" id="complete-order-btn">Complete Order</button>
+        </div>
+
+    </div>
+    
+
+    <!-- Modal -->
+    <div class="modal hidden" id="modal">
+        <div class="modal-close-btn" id="modal-close-btn">Close</div>
+        <form class="modal-form">
+            <h2 class="pmt-form-title">Enter Card Details</h2>
+            <input type="text" placeholder="Name" class="form-input" id="cname" required />
+            <input type="number" placeholder="Card number" class="form-input" id="cnumber" required />
+            <input type="number" placeholder="CVV" class="form-input" id="cvv" required />
+            <p id='error-msg'></p>
+            <div class="submit">
+                <button class="submit-btn" id="submit-btn">Submit</button>
+            </div>
+        </form>
+        
+    </div>
+
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
